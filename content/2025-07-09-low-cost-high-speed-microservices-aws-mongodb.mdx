@@ -7,17 +7,22 @@ slug: cost-high-speed-microservices-aws-mongodb-atlas
 
 This document details the implementation of a modern microservices architecture designed for both high performance and significant cost efficiency. By strategically combining **AWS Lambda** for serverless compute, **Amazon API Gateway** for API management, and a flexible **NoSQL database** (such as MongoDB Atlas), developers can build robust and scalable applications without the traditional overhead of server management.
 
------
+---
 
 ## The Implemented Serverless Workflow
 
 The architectural diagram below illustrates a well-defined and efficient flow for handling requests within this serverless environment. It showcases how each component connects to create a seamless, event-driven process.
 
 <div align="center">
-  <Image src="/posts/flow.png" width="600" height="600" alt="This new diagram clearly visualizes the serverless workflow you will implement" />
+  <Image
+    src="/posts/flow.png"
+    width="600"
+    height="600"
+    alt="This new diagram clearly visualizes the serverless workflow you will implement"
+  />
 </div>
 
-***Image Explanation:*** *This new diagram clearly visualizes the serverless workflow you will implement.*
+**_Image Explanation:_** _This new diagram clearly visualizes the serverless workflow you will implement._
 
 1.  **User Request & API Gateway:** The process begins with a **user request**. This request is sent to **Amazon API Gateway**, which acts as the secure front door for the application. It manages all incoming traffic and routes it appropriately.
 2.  **AWS Lambda Trigger:** API Gateway triggers the correct **AWS Lambda** function. This function contains the specific business logic needed to process the user's request. It only runs when called, which is the key to its cost-efficiency.
@@ -26,7 +31,7 @@ The architectural diagram below illustrates a well-defined and efficient flow fo
 
 This entire flow is designed to be fast, scalable, and secure, with each managed service handling a specific part of the process.
 
------
+---
 
 ## Core Implementation Steps
 
@@ -40,7 +45,7 @@ Implementing this low-cost, high-speed architecture involves several key steps:
 6.  **Deploy Infrastructure as Code:** Use tools like AWS CloudFormation or the Serverless Framework to define and deploy your entire infrastructure in a repeatable, automated manner.
 7.  **Implement Monitoring and Logging:** Integrate AWS CloudWatch for monitoring the performance and health of your API Gateway and Lambda functions.
 
------
+---
 
 ## Key Advantages of This Implementation
 
@@ -58,7 +63,7 @@ By leveraging the pay-per-use models of AWS Lambda and MongoDB Atlas Serverless,
 
 Both AWS Lambda and MongoDB Atlas Serverless are designed to scale automatically based on demand. Your application can seamlessly handle traffic spikes without requiring manual intervention.
 
------
+---
 
 ## Conclusion
 
