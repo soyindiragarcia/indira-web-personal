@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import MDX from './components/MDX'
 
+export const runtime = 'edge'
 export const revalidate = 3600
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {

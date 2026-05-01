@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import PageTitleAnimation from './components/PageTitleAnimation'
 import RootBackground from './components/RootBackground'
 
+export const runtime = 'edge'
+
 export const metadata: Metadata = {
   title: 'Dede Ariansya',
   description: 'I’m Dede Ariansya, Full Stack Web Developer based in Makassar, Indonesia.',
