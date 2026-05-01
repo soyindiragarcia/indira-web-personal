@@ -1,4 +1,3 @@
-import dedeard from '@/assets/dedeard.jpg'
 import { RESUME_URL } from '@/constans/common'
 import type { Metadata } from 'next'
 import Image from 'next/image'
@@ -8,9 +7,9 @@ import PageTitle from '../components/PageTitle'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'About - Dede Ariansya',
+  title: 'Sobre Mí - Indira García',
   openGraph: {
-    title: 'About - Dede Ariansya',
+    title: 'Sobre Mí - Indira García',
     url: '/about',
   },
   alternates: {
@@ -21,46 +20,41 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <PageTitle title="About" />
+      <PageTitle title="Sobre Mí" />
       <div className="md:flex">
         <div className="mb-5 md:w-56">
-          <Image src={dedeard} alt="Foto dede ariansya" className="block w-full" placeholder="blur" />
+          <Image src="/media/indira-laptop.png" alt="Indira García" className="block w-full" width={224} height={280} />
         </div>
         <div className="md:flex-1 md:pl-6">
-          <h2 className="mb-2 text-xl font-bold">I’m Dede Ardiansya</h2>
+          <h2 className="mb-2 text-xl font-bold">Soy Indira García</h2>
           <div className="mb-6">
             <p className="mb-1">
-              Full Stack Web Developer based in Makassar, Indonesia. <br />I try my best to make the code I write easy to read and
-              understand.
+              Implementadora especializada en embudos de ventas y automatizaciones de marketing. Ayudo a emprendedores, coaches y agencias digitales a convertir sus ideas en estrategias que generan resultados medibles.
             </p>
           </div>
-          <h2 className="mb-2 text-xl font-bold">Saya Dede Ardiansya</h2>
+          <h2 className="mb-2 text-xl font-bold">Mi enfoque</h2>
           <div className="mb-6">
             <p className="mb-1">
-              Full Stack Web Developer berbasis di Makassar, Indonesia.
-              <br />
-              Saya mencoba yang terbaik untuk membuat kode yang saya tulis mudah untuk dibaca dan dipahami.
+              No soy una agencia genérica. Soy una implementadora que entiende el proceso completo: desde el análisis de tu negocio, el diseño de landing pages profesionales, la construcción de embudos de conversión, hasta la optimización continua de automatizaciones que generan ROI tangible.
             </p>
           </div>
-          <h2 className="mb-2 text-xl font-bold">Tech i love</h2>
+          <h2 className="mb-2 text-xl font-bold">Especialidades</h2>
           <div className="mb-6">
-            <p className="mb-1">TypeScript, Express.js, Laravel, Tailwind, Bootstrap, Vue and React.</p>
+            <p className="mb-1">Diseño de Landing Pages, Embudos de Ventas, Automatizaciones con Make, Integración de Herramientas, Estrategia de Marketing Digital, Optimización de Conversiones.</p>
           </div>
-          <a
-            download
-            target="_blank"
-            rel="nofollow"
-            href={RESUME_URL}
-            className="mr-3 inline-block bg-white px-5 py-3 hover:bg-black hover:text-white dark:bg-black dark:hover:bg-white dark:hover:text-black"
-          >
-            Resume
-          </a>
           <Link
             href="/contact"
             rel="nofollow"
+            className="mr-3 inline-block bg-white px-5 py-3 hover:bg-black hover:text-white dark:bg-black dark:hover:bg-white dark:hover:text-black"
+          >
+            Agendar Consulta
+          </Link>
+          <Link
+            href="/projects"
+            rel="nofollow"
             className="inline-block bg-white px-5 py-3 hover:bg-black hover:text-white dark:bg-black dark:hover:bg-white dark:hover:text-black"
           >
-            Contact me
+            Ver Proyectos
           </Link>
         </div>
       </div>

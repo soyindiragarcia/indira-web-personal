@@ -17,10 +17,15 @@ const PageTitleAnimation: React.FC = () => {
     setTitle(PAGE_TITLES[pathname] || '')
   }, [pathname, mounted])
 
+  const isHome = pathname === '/'
+
   return (
     <>
       {mounted && (
-        <span className="fixed top-0 block select-none px-3 text-[calc(2rem+6.9vw)] md:left-16 md:px-5 lg:px-10 ">
+        <span
+          className="fixed top-0 block select-none px-3 text-[calc(2rem+6.9vw)] md:left-16 md:px-5 lg:px-10"
+          style={{ color: '#dd2098', opacity: isHome ? 1 : 0.9 }}
+        >
           <span className="block text-[1.5em] font-bold md:text-[1.6em]">
             <TextTransition springConfig={config.wobbly} inline>
               <span data-text={title} className="after:content-[attr(data-text)]" />

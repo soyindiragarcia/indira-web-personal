@@ -15,7 +15,7 @@ const Providers: React.FC<React.PropsWithChildren> = ({ children }) => {
         <MountProvider>
           <NavigationProvider>
             <CursorFollowerProvider>
-              <ThemeProvider defaultDark>
+              <ThemeProvider>
                 <RootBackgroundProvider>{children}</RootBackgroundProvider>
               </ThemeProvider>
             </CursorFollowerProvider>

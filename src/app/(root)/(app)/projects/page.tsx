@@ -6,9 +6,9 @@ import getProjects from './getProjects'
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: 'Projects - Dede Ariansya',
+  title: 'Proyectos - Indira García',
   openGraph: {
-    title: 'Projects - Dede Ariansya',
+    title: 'Proyectos - Indira García',
     url: '/projects',
   },
   alternates: {
@@ -20,7 +20,7 @@ export default async function ProjectsPage() {
   let repositories = await getProjects()
   return (
     <>
-      <PageTitle title="Projects" />
+      <PageTitle title="Proyectos" />
       <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
         {repositories.map((repo, i) => (
           <RepositoryCard key={i} repo={repo} />

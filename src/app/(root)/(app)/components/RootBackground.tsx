@@ -1,6 +1,5 @@
 'use client'
 
-import background from '@/assets/background.webp'
 import { useRootBackground } from '@/contexts/RootBackgroundContext'
 import Image from 'next/image'
 import React, { memo } from 'react'
@@ -20,7 +19,12 @@ const RootBackground: React.FC = () => {
         {isVideoPlayed ? <FiVolume2 size={18} /> : <FiVolumeX size={18} />}
       </button>
       <div className="fixed left-0 top-0 h-full w-full overflow-hidden bg-white dark:bg-black">
-        <Image src={background} alt={process.env.NEXT_PUBLIC_HOST + ' backgroud image.'} className={'block h-full w-full object-cover'} />
+        {/* Móvil: imagen vertical */}
+        <Image src="/media/bg-hero-mobile.png" alt="Hero background" className={'block h-full w-full object-cover object-top md:hidden'} fill priority />
+        {/* Desktop: imagen horizontal */}
+        <Image src="/media/bg-hero.png" alt="Hero background" className={'hidden h-full w-full object-cover object-center md:block'} fill priority />
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/60 z-5" />
         {isVideoPlayed && (
           <video src="/media/background.webm" loop autoPlay className={'absolute top-0 z-10 block h-full w-full object-cover'} />
         )}

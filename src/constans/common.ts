@@ -3,33 +3,33 @@ import { FiBookOpen, FiClipboard, FiGlobe, FiHome, FiMail, FiUser } from 'react-
 export const HOST = process.env.NEXT_PUBLIC_HOST || 'http://localhost:3000'
 
 export const NAV_ITEMS = [
-  { path: '/', label: 'Home', Icon: FiHome },
-  { path: '/about', label: 'About', Icon: FiUser },
+  { path: '/', label: 'Inicio', Icon: FiHome },
+  { path: '/about', label: 'Sobre Mí', Icon: FiUser },
   { path: '/blog', label: 'Blog', Icon: FiGlobe },
-  { path: '/projects', label: 'Projects', Icon: FiClipboard },
-  { path: '/contact', label: 'Contact', Icon: FiMail },
-  { path: '/guestbook', label: 'Guestbook', Icon: FiBookOpen },
+  { path: '/projects', label: 'Proyectos', Icon: FiClipboard },
+  { path: '/contact', label: 'Contacto', Icon: FiMail },
+  { path: '/guestbook', label: 'Libro de Visitas', Icon: FiBookOpen },
 ]
 
 export const PAGE_TITLES = {
   '/': '._',
-  '/about': 'About',
+  '/about': 'Sobre Mí',
   '/blog': 'Blog',
-  '/projects': 'Projects',
-  '/contact': 'Contact',
-  '/guestbook': 'G-book',
+  '/projects': 'Proyectos',
+  '/contact': 'Contacto',
+  '/guestbook': 'Libro de Visitas',
 }
 
 export const SOCIALS = {
-  GH: 'https://github.com/dedeard',
-  IG: 'https://www.instagram.com/dcode.js',
-  IN: 'https://www.linkedin.com/in/dedeard/',
-  WA: 'https://api.whatsapp.com/send?phone=6285343854343&text=%3CChatMe%20%2F%3E',
+  IG: 'https://www.instagram.com/soyindiragarcia',
+  IN: 'https://www.linkedin.com/in/soyindiragarcia/',
+  FV: 'https://es.fiverr.com/s/yv3B0wz',
+  UP: 'https://www.upwork.com/freelancers/~015df1ac5997eb7912?mp_source=share',
 }
 
 export const RESUME_URL = 'https://drive.google.com/file/d/17EnrWbKObHNKFj4scsZM0R9JOX96uRJ3/view?usp=drive_link'
 
-export const FORMSPREE_KEY = 'xoqyaqqe'
+export const FORMSPREE_KEY = 'mkoygjez'
 
 export const FIREBASE_CONFIG = {
   apiKey: 'AIzaSyCVXW6MTdRVtYPTOoV92ruBQ3ZQcF5Ho0g',

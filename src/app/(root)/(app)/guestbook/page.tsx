@@ -9,9 +9,9 @@ import GuestbookMessages from './components/GuestbookMessages'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Guestbook - Dede Ariansya',
+  title: 'Libro de Visitas - Indira García',
   openGraph: {
-    title: 'Guestbook - Dede Ariansya',
+    title: 'Libro de Visitas - Indira García',
     url: '/guestbook',
   },
   alternates: {
@@ -24,7 +24,7 @@ export default async function GuestbookPage() {
 
   return (
     <>
-      <PageTitle title="G-book" />
+      <PageTitle title="Libro de Visitas" />
       <FormSignGuestbook />
       <GuestbookMessages initialMessages={JSON.stringify(messages)} />
     </>

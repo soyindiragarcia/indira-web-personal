@@ -6,9 +6,9 @@ import BlogPostItem from './components/BlogPostItem'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Blog - Dede Ariansya',
+  title: 'Blog - Indira García',
   openGraph: {
-    title: 'Blog - Dede Ariansya',
+    title: 'Blog - Indira García',
     url: '/blog',
   },
   alternates: {
