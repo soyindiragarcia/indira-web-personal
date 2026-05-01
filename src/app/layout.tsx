@@ -6,8 +6,6 @@ import Providers from './Providers'
 import CursorFollower from './components/CursorFollower'
 import './globals.css'
 
-export const runtime = 'edge'
-
 const lato = Lato({
   weight: ['400', '700'],
   subsets: ['latin'],

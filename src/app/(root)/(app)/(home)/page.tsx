@@ -2,8 +2,6 @@ import { SOCIALS } from '@/constans/common'
 import { FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { SiFiverr, SiUpwork } from 'react-icons/si'
 
-export const dynamic = 'force-dynamic'
-
 export default function HomePage() {
   return (
     <div className="relative flex min-h-full w-full flex-col items-center justify-center">

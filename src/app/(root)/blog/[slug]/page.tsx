@@ -5,8 +5,10 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import MDX from './components/MDX'
 
-export const runtime = 'edge'
-export const revalidate = 3600
+export function generateStaticParams() {
+  const posts = getBlogPosts()
+  return posts.map((post) => ({ slug: post.slug }))
+}
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const post = getBlogPosts().find((post) => post.slug === params.slug)

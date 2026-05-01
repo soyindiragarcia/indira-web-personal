@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
 import Navigation from './components/Navigation'
 
-export const runtime = 'edge'
-
 export const metadata: Metadata = {
   robots: 'index, follow',
 }

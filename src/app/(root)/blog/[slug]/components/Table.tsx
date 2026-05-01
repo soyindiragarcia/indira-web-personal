@@ -1,15 +1,15 @@
 interface TableProps {
-  headers: string[]
-  rows: string[][]
+  headers?: string[]
+  rows?: string[][]
 }
 
 const Table: React.FC<TableProps> = (props) => {
+  if (!props.headers || !props.rows) return null
+
   const headers = props.headers.map((header, index) => <th key={index}>{header}</th>)
   const rows = props.rows.map((row, index) => (
     <tr key={index}>
-      {row.map((cell, cellIndex) => (
-        <td key={cellIndex}>{cell}</td>
-      ))}
+      {Array.isArray(row) ? row.map((cell, cellIndex) => <td key={cellIndex}>{cell}</td>) : null}
     </tr>
   ))
 
