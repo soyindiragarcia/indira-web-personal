@@ -21,7 +21,14 @@ export default function AboutPage() {
       <PageTitle title="Sobre Mí" />
       <div className="md:flex">
         <div className="mb-5 md:w-56">
-          <Image src="/media/indira-laptop.png" alt="Indira García" className="block w-full" width={224} height={280} />
+          <Image
+            src="/media/indira-laptop.webp"
+            alt="Indira García"
+            className="block w-full"
+            width={224}
+            height={391}
+            style={{ animation: 'fadeIn 0.6s ease-in-out' }}
+          />
         </div>
         <div className="md:flex-1 md:pl-6">
           <h2 className="mb-2 text-xl font-bold">Soy Indira García</h2>
