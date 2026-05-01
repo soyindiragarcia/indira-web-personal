@@ -3,16 +3,16 @@ import PageTitleAnimation from './components/PageTitleAnimation'
 import RootBackground from './components/RootBackground'
 
 export const metadata: Metadata = {
-  title: 'Dede Ariansya',
-  description: 'I’m Dede Ariansya, Full Stack Web Developer based in Makassar, Indonesia.',
+  title: ‘Indira García’,
+  description: ‘Soy Indira García, implementadora de embudos de ventas y automatizaciones.’,
   openGraph: {
-    images: '/media/poster.jpg',
-    title: 'Dede Ariansya',
-    description: 'I’m Dede Ariansya, Full Stack Web Developer based in Makassar, Indonesia.',
-    url: '/',
+    images: ‘/media/poster.jpg’,
+    title: ‘Indira García’,
+    description: ‘Soy Indira García, implementadora de embudos de ventas y automatizaciones.’,
+    url: ‘/’,
   },
   alternates: {
-    canonical: '/',
+    canonical: ‘/’,
   },
 }
 

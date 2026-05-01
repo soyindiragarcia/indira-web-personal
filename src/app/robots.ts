@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://dedeard.my.id/sitemap.xml',
+    sitemap: 'https://soyindiragarcia.com/sitemap.xml',
   }
 }

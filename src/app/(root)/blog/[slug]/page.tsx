@@ -17,7 +17,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     title: post.metadata.title,
     description: post.metadata.summary,
     authors: {
-      name: 'Dede Ariansya',
+      name: 'Indira García',
     },
     openGraph: {
       title: post.metadata.title,
@@ -54,7 +54,7 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
             url: `${HOST}/blog/${post.slug}`,
             author: {
               '@type': 'Person',
-              name: 'Dede Ariansya',
+              name: 'Indira García',
             },
           }),
         }}
